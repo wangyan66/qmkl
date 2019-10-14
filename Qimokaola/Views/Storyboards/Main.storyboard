@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--添加考试倒计时-->
+        <scene sceneID="QOa-Wb-xYe">
+            <objects>
+                <tableViewController storyboardIdentifier="ZWAddCountDownViewController" title="添加考试倒计时" id="P3V-2j-0VO" customClass="ZWAddCountDownViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HFk-ff-sm7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="Yns-ko-yQh">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="26" id="7Qa-hK-6Nz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Qa-hK-6Nz" id="Al3-ab-0OE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="25.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Trb-QH-tiE">
+                                        <rect key="frame" x="0.0" y="26" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Trb-QH-tiE" id="MlT-nF-cXT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试科目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9s-YF-xBr">
+                                                    <rect key="frame" x="20" y="11" width="70" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入将要进行的考试科目" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vr3-uo-DUk">
+                                                    <rect key="frame" x="110" y="7" width="265" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="F1h-bW-ELU"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b9s-YF-xBr" firstAttribute="centerY" secondItem="MlT-nF-cXT" secondAttribute="centerY" id="4R3-8V-zcr"/>
+                                                <constraint firstItem="vr3-uo-DUk" firstAttribute="baseline" secondItem="b9s-YF-xBr" secondAttribute="baseline" id="9KN-TW-7Hw"/>
+                                                <constraint firstItem="b9s-YF-xBr" firstAttribute="leading" secondItem="MlT-nF-cXT" secondAttribute="leading" constant="20" id="DOm-qQ-6ng"/>
+                                                <constraint firstAttribute="trailing" secondItem="vr3-uo-DUk" secondAttribute="trailing" id="DUd-so-vpQ"/>
+                                                <constraint firstItem="vr3-uo-DUk" firstAttribute="leading" secondItem="b9s-YF-xBr" secondAttribute="trailing" constant="20" id="VvL-cG-Ulr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RDw-wX-ecY">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RDw-wX-ecY" id="9Cf-7D-XGL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-5m-jjD">
+                                                    <rect key="frame" x="20" y="11.5" width="70" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktt-pu-aui">
+                                                    <rect key="frame" x="110" y="7" width="265" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="E3V-AQ-t2l"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="选择时间">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="chooseCountdownTime:" destination="P3V-2j-0VO" eventType="touchUpInside" id="JfK-76-8HN"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ktt-pu-aui" secondAttribute="trailing" id="DeC-zt-NqO"/>
+                                                <constraint firstItem="ktt-pu-aui" firstAttribute="leading" secondItem="hqf-5m-jjD" secondAttribute="trailing" constant="20" id="LOd-ad-Og3"/>
+                                                <constraint firstItem="hqf-5m-jjD" firstAttribute="centerY" secondItem="9Cf-7D-XGL" secondAttribute="centerY" id="RdB-al-hEM"/>
+                                                <constraint firstItem="hqf-5m-jjD" firstAttribute="leading" secondItem="9Cf-7D-XGL" secondAttribute="leading" constant="20" id="Rha-YR-361"/>
+                                                <constraint firstItem="ktt-pu-aui" firstAttribute="centerY" secondItem="hqf-5m-jjD" secondAttribute="centerY" id="vlL-9j-jYj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SL0-nQ-QWb">
+                                        <rect key="frame" x="0.0" y="114" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SL0-nQ-QWb" id="ALC-UF-8CS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试地点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNS-Kw-w8N">
+                                                    <rect key="frame" x="20" y="11.5" width="70" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入详细地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tET-AU-yfD">
+                                                    <rect key="frame" x="110" y="7" width="265" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="fin-c2-TKg"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oNS-Kw-w8N" firstAttribute="centerY" secondItem="ALC-UF-8CS" secondAttribute="centerY" id="6dM-Ng-myR"/>
+                                                <constraint firstAttribute="trailing" secondItem="tET-AU-yfD" secondAttribute="trailing" id="jg3-zA-dnM"/>
+                                                <constraint firstItem="tET-AU-yfD" firstAttribute="baseline" secondItem="oNS-Kw-w8N" secondAttribute="baseline" id="mSm-SR-MGm"/>
+                                                <constraint firstItem="tET-AU-yfD" firstAttribute="leading" secondItem="oNS-Kw-w8N" secondAttribute="trailing" constant="20" id="nub-cc-M8f"/>
+                                                <constraint firstItem="oNS-Kw-w8N" firstAttribute="leading" secondItem="ALC-UF-8CS" secondAttribute="leading" constant="20" id="zjZ-MU-gPu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XcA-7e-5uE">
+                                        <rect key="frame" x="0.0" y="158" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XcA-7e-5uE" id="FCI-i8-2co">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sy-pk-t5t">
+                                                    <rect key="frame" x="20" y="11.5" width="70" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsU-Wc-sse">
+                                                    <rect key="frame" x="110" y="7" width="265" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="6pt-ue-bBJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="提前1小时">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="chooseAlarmTime:" destination="P3V-2j-0VO" eventType="touchUpInside" id="CiW-M5-zug"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="JsU-Wc-sse" secondAttribute="trailing" id="LYw-OH-yKQ"/>
+                                                <constraint firstItem="JsU-Wc-sse" firstAttribute="centerY" secondItem="5Sy-pk-t5t" secondAttribute="centerY" id="Ymk-WX-GPH"/>
+                                                <constraint firstItem="JsU-Wc-sse" firstAttribute="leading" secondItem="5Sy-pk-t5t" secondAttribute="trailing" constant="20" id="Zx0-9J-ohB"/>
+                                                <constraint firstItem="5Sy-pk-t5t" firstAttribute="centerY" secondItem="FCI-i8-2co" secondAttribute="centerY" id="rgS-3n-hrp"/>
+                                                <constraint firstItem="5Sy-pk-t5t" firstAttribute="leading" secondItem="FCI-i8-2co" secondAttribute="leading" constant="20" id="vaQ-6Y-g12"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="P3V-2j-0VO" id="R2C-HM-Gwl"/>
+                            <outlet property="delegate" destination="P3V-2j-0VO" id="yhx-h0-le6"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="alarmTimeBtn" destination="JsU-Wc-sse" id="Q4x-YK-Azg"/>
+                        <outlet property="eaxmNameField" destination="vr3-uo-DUk" id="n5e-HZ-80a"/>
+                        <outlet property="examLocationField" destination="tET-AU-yfD" id="mtd-Rh-T3Q"/>
+                        <outlet property="examTimeBtn" destination="ktt-pu-aui" id="ZCK-sR-lmf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygT-Q0-Bon" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="199.25037481259372"/>
+        </scene>
+    </scenes>
+</document>

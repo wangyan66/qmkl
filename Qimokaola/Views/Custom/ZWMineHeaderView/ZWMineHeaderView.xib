@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZWMineHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pOq-xk-Fht">
+                    <rect key="frame" x="15" y="17.5" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pOq-xk-Fht" secondAttribute="height" multiplier="1:1" id="h5P-fn-wXf"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_icon_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="pt8-s0-TOn">
+                    <rect key="frame" x="348" y="42.5" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="JXM-Mn-Hhh"/>
+                        <constraint firstAttribute="width" constant="15" id="N4k-6j-Ik1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="凌子文" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H40-9S-RAp">
+                    <rect key="frame" x="95" y="25.5" width="49" height="19.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="155" id="SF1-kZ-orp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="福州大学" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47J-GP-eRC">
+                    <rect key="frame" x="95" y="55" width="58" height="17"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_gender_female" translatesAutoresizingMaskIntoConstraints="NO" id="2xV-Hk-en0">
+                    <rect key="frame" x="149" y="27.5" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="8da-h8-6yn"/>
+                        <constraint firstAttribute="height" constant="15" id="pBh-SY-kyz"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pt8-s0-TOn" secondAttribute="trailing" constant="12" id="9iG-ZM-rd1"/>
+                <constraint firstItem="pOq-xk-Fht" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MUE-Xu-nfz"/>
+                <constraint firstItem="2xV-Hk-en0" firstAttribute="leading" secondItem="H40-9S-RAp" secondAttribute="trailing" constant="5" id="Mkn-m8-UJn"/>
+                <constraint firstItem="H40-9S-RAp" firstAttribute="bottom" secondItem="pOq-xk-Fht" secondAttribute="centerY" constant="-5" id="Nyk-u6-wLE"/>
+                <constraint firstItem="H40-9S-RAp" firstAttribute="leading" secondItem="pOq-xk-Fht" secondAttribute="trailing" constant="15" id="SsH-eb-tvf"/>
+                <constraint firstItem="47J-GP-eRC" firstAttribute="leading" secondItem="H40-9S-RAp" secondAttribute="leading" id="eIz-Lo-mHG"/>
+                <constraint firstItem="pt8-s0-TOn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iil-fs-cwN"/>
+                <constraint firstItem="2xV-Hk-en0" firstAttribute="centerY" secondItem="H40-9S-RAp" secondAttribute="centerY" id="kA2-Kh-IN0"/>
+                <constraint firstItem="pOq-xk-Fht" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="nbe-WO-lMa"/>
+                <constraint firstItem="47J-GP-eRC" firstAttribute="top" secondItem="pOq-xk-Fht" secondAttribute="centerY" constant="5" id="pjd-Uy-OP6"/>
+                <constraint firstItem="pOq-xk-Fht" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.65" id="yM3-RM-1oA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="pOq-xk-Fht" id="UOf-Ed-5v4"/>
+                <outlet property="genderImageView" destination="2xV-Hk-en0" id="C1m-jM-YX2"/>
+                <outlet property="nicknameLabel" destination="H40-9S-RAp" id="68B-wE-70d"/>
+                <outlet property="schoolNameLabel" destination="47J-GP-eRC" id="0uF-tN-jtT"/>
+            </connections>
+            <point key="canvasLocation" x="-13.5" y="225"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_icon_arrow" width="24" height="24"/>
+        <image name="icon_gender_female" width="20" height="20"/>
+    </resources>
+</document>

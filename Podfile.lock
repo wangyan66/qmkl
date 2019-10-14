@@ -1,0 +1,206 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
+  - AXIndicatorView (0.0.7)
+  - AXNavigationBackItemInjection (0.0.2)
+  - AXPracticalHUD (1.1.6):
+    - AXIndicatorView
+  - AXWebViewController (0.6.0):
+    - Aspects
+    - AXNavigationBackItemInjection
+    - AXPracticalHUD
+    - NJKWebViewProgress
+  - CWLateralSlide (1.6.2)
+  - DZNEmptyDataSet (1.8.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - IQKeyboardManager (4.0.9)
+  - LCActionSheet (3.2.2):
+    - Masonry (~> 1.0.2)
+  - LinqToObjectiveC (2.1.0)
+  - LPDQuoteImagesView (0.3.1)
+  - MarqueeLabel (3.0.5):
+    - MarqueeLabel/ObjC (= 3.0.5)
+  - MarqueeLabel/ObjC (3.0.5)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.15.3)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
+  - PPNumberButton (0.6.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDAutoLayout (2.1.8)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - TYAttributedLabel (2.6.6)
+  - UMCAnalytics (5.5.0):
+    - UMCCommon
+  - UMCCommon (1.5.2)
+  - UMCCommonLog (1.0.0)
+  - UMCPush (3.2.2):
+    - UMCCommon
+  - UMCShare/Core (6.9.4):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/UI (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - XHInputView (1.1.1)
+  - YYCache (1.0.4)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - AFNetworking
+  - AXWebViewController
+  - CWLateralSlide
+  - DZNEmptyDataSet
+  - FMDB
+  - IQKeyboardManager
+  - LCActionSheet
+  - LinqToObjectiveC
+  - LPDQuoteImagesView
+  - MarqueeLabel
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - PPNumberButton
+  - ReactiveCocoa (~> 2.5)
+  - SDAutoLayout
+  - SDCycleScrollView
+  - SDWebImage
+  - TYAttributedLabel
+  - UMCAnalytics
+  - UMCCommon
+  - UMCCommonLog
+  - UMCPush
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedWeChat
+  - UMCShare/UI
+  - XHInputView
+  - YYCategories
+  - YYModel
+  - YYText (~> 1.0.7)
+  - YYWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Aspects
+    - AXIndicatorView
+    - AXNavigationBackItemInjection
+    - AXPracticalHUD
+    - AXWebViewController
+    - CWLateralSlide
+    - DZNEmptyDataSet
+    - FMDB
+    - IQKeyboardManager
+    - LCActionSheet
+    - LinqToObjectiveC
+    - LPDQuoteImagesView
+    - MarqueeLabel
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - NJKWebViewProgress
+    - PPNumberButton
+    - ReactiveCocoa
+    - SDAutoLayout
+    - SDCycleScrollView
+    - SDWebImage
+    - TYAttributedLabel
+    - UMCAnalytics
+    - UMCCommon
+    - UMCCommonLog
+    - UMCPush
+    - UMCShare
+    - XHInputView
+    - YYCache
+    - YYCategories
+    - YYImage
+    - YYModel
+    - YYText
+    - YYWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  AXIndicatorView: caa6c08cc6b732fad163fa26197e3c34b1339060
+  AXNavigationBackItemInjection: efe0446967f3cbcc85a9118decd1e145138912dd
+  AXPracticalHUD: eba707b5515a4da7424ac3d36f07e643df1c8fc3
+  AXWebViewController: bfb641ffd4bd74ac7c3182eb09fe4686d5201833
+  CWLateralSlide: 6ca0445bcbc579d840d88b0527f6762cdcd20e01
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
+  LCActionSheet: 5a71fdd0daee922ee44fed386dd4b3f36490275d
+  LinqToObjectiveC: f0e40c137a458b6b9725c4c7b6a575c0c72e3aec
+  LPDQuoteImagesView: 5e60a06696df6fef7546d038371cbf17b7830d52
+  MarqueeLabel: 8a25b2cf02cf52165022f01369e63536c58fcc00
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+  PPNumberButton: 619c6b7d15b0c270ab701af5bf13254248443a29
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDAutoLayout: 5a4b48d6b8a5172ae8d088d2879e40dd795e6251
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
+  UMCAnalytics: 4667788559a72f2fa5077117d1b8802a3b6eb6bb
+  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
+  UMCPush: 5ab89bdbcc1fe90b1c669ff79213b44dc4821ec5
+  UMCShare: aa233aecad67979930fe43f3a2f676023b669439
+  XHInputView: d0dcd226f1df1d288326bdf8eb620221cc6ed3a7
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 47c0e0bac2146386458f72aebb351d416f7dad6f
+
+COCOAPODS: 1.5.3

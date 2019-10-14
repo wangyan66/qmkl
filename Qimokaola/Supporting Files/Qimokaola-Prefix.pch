@@ -1,0 +1,92 @@
+//
+//  Qimokaola-Prefix.pch
+//  Qimokaola
+//
+//  Created by Administrator on 16/3/3.
+//  Copyright © 2016年 Administrator. All rights reserved.
+//
+
+#ifndef Qimokaola_Prefix_pch
+#define Qimokaola_Prefix_pch
+
+#import "UIView+Extension.h"
+
+#ifdef DEBUG
+#define NSLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#else
+#define NSLog(format, ...)
+#endif
+
+#define createSchoolName(schoolName) [NSString stringWithFormat:@"来自[%@]", schoolName]
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+
+#define ZWFont(fontSize) [UIFont systemFontOfSize:fontSize]
+
+#define RGB(r, g, b) [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:1.0f]
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a]
+
+#define defaultBackgroundColor RGB(239, 239, 244)
+#define defaultBlueColor RGB(80,140,238)
+
+#define defaultPlaceHolderColor RGB(245, 245, 245)
+
+#define defaultSeparatorLineColor RGB(240, 240, 240)
+#define universalGrayColor RGB(242, 242, 242)
+
+
+
+#define DecodeAnonyousCode(custom) ([[[custom jsonValueDecoded] objectForKey:@"a"] intValue] == 0)
+
+static NSString *const kDownloadFileEventID = @"Download_File";
+static NSString *const kShareFileEventID = @"Share_File";
+static NSString *const kOpenFileEventID = @"Open_File";
+static NSString *const kCommitOrderEventID = @"Commit_Order";
+static NSString *const kPayOrderEventID = @"Pay_Order";
+static NSString *const kAppLaunchEventID = @"App_launch";
+static const CGFloat kNavigationBarHeight = 64.f;
+static const CGFloat kTabBarHeight = 49.f;
+static const NSTimeInterval kTimeIntervalShort = 1.0;
+static const NSTimeInterval kTimeIntervalMid = 1.5;
+static const NSTimeInterval kTimeIntervalLong = 2.0;
+static const NSTimeInterval kRequestWaitingTime = 0.5;
+static const NSTimeInterval kUploadWaitingTime = 2;
+static const NSUInteger kStudentCircleFetchDataCount = 30;
+// 获取未读信息的时间间隔
+static const NSTimeInterval kFetchUnreadInfoInterval = 120;
+// 获取验证码间隔
+static const NSTimeInterval kSendCodeTimeInterval = 60;
+
+static const NSUInteger kPhoneNumberLength = 11;
+// 支付宝付款成功代码
+static const NSInteger APLIPAY_PAY_SUCCESS_STATUS = 9000;
+static NSString *const kUserNotLoginInfo = @"请先登录";
+static NSString *const kHTTPResponseCodeKey = @"code";
+static NSString *const kHTTPResponseInfoKey = @"info";
+static NSString *const kHTTPResponseResKey = @"res";
+static NSString *const kHTTPResponseMsgKey =@"msg";
+static NSString *const kHTTPResponseDataKey =@"data";
+static const BOOL kNeedHideSchoolLabel = YES;
+/**
+ 有关用户登录的通知
+ */
+static NSString *const kUserNeedLoginNotification = @"kUserNeedLoginNotification";
+static NSString *const kUserLoginSuccessNotification = @"kUserLoginSuccessNotification";
+static NSString *const kUserLogoutSuccessNotification = @"kUserLogoutSuccessNotification";
+static NSString *const kLocalUserLoginStateGuranteedNotification = @"kLocalUserLoginStateGuranteed";
+//本地用户信息存在时发送相应通知，为了确保每次进入应用若用户登录状态正常则登录微社区
+
+static NSString *const kShowAdNotification = @"kShowAdNotification";
+
+static NSString *const kStudentCircleAnonyousName = @"匿名同学";
+
+//学生圈
+static NSString *const kNumOfPage=@"7";
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Qimokaola_Prefix_pch */
